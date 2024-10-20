@@ -107,3 +107,24 @@ export const login = catchAsyncError(async(req,res,next)=>{
   // If Everything good then login the user
   sendToken(user,200,res,"User Logged in Successfully")
 })
+
+
+// Logout Function
+export const logout = catchAsyncError(async(req,res,next)=>{
+  res.status(200).cookie("token","",{
+    expires:new Date(Date.now()),
+    httpOnly:true
+  }).json({
+    success:true,
+    message:"Logged out successfully"
+  })
+})
+
+// Funtion to get user - user getting its details
+export const getUser = catchAsyncError(async(req,res,next)=>{
+    const user = req.user;
+    res.status(200).json({
+      success:true,
+      user
+    })
+})
