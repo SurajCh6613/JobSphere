@@ -3,7 +3,7 @@ import ErrorHandler, { errorMiddleware } from "../middlewares/error.js";
 import { User } from "../models/userSchema.js";
 import { v2 as cloudinary } from "cloudinary";
 import { sendToken } from "../utils/jwtTokens.js";
-import { setDriver, syncIndexes } from "mongoose";
+
 
 
 // User Register function
