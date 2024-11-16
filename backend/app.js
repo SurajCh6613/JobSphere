@@ -7,6 +7,7 @@ import { errorMiddleware } from "./middlewares/error.js";
 import fileUpload from "express-fileupload";
 import userRouter from "./routes/userRouter.js";
 import jobRouter from "./routes/jobRouter.js";
+import applicationRouter from "./routes/applicationRouter.js";
 
 
 const app = express();
@@ -33,6 +34,7 @@ app.use(
 
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/job", jobRouter);
+app.use("/api/v1/application", applicationRouter);
 
 connection();
 app.use(errorMiddleware);
