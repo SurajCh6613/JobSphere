@@ -11,7 +11,7 @@ const Spinner = () => {
         alignItems: "center",
       }}
     >
-<ClipLoader size={150} ariaLabel="Loading Spinner"/>
+<ClipLoader size={150}/>
     </section>
   );
 };
