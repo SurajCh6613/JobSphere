@@ -28,8 +28,8 @@ export const postApplication = catchAsyncError(async (req, res, next) => {
   }
 
   const isAlreadyApplied = await Application.findOne({
-    "jobInfo.id":id,
-    "jobSeekerInfo":req.user.id
+    "jobInfo.jobId":id,
+    "jobSeekerInfo.id":req.user.id
   });
   if(isAlreadyApplied){
     return next(new ErrorHandler("You have already applied for this job.",400)
