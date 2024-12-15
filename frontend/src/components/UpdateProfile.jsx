@@ -15,7 +15,6 @@ const UpdateProfile = () => {
   );
 
   const dispatch = useDispatch();
-  const navigateTo = useNavigate();
 
   const [name, setName] = useState(user && user.name);
   const [email, setEmail] = useState(user && user.email);

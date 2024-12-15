@@ -39,26 +39,22 @@ const Jobs = () => {
   };
 
   const cities = [
-    "Lucknow",
-    "Delhi",
-    "Islamabad",
-    "Rawalpindi",
-    "Faisalabad",
-    "Multan",
     "Hyderabad",
-    "Quetta",
-    "Peshawar",
-    "Sialkot",
-    "Gujranwala",
-    "Sargodha",
-    "Bahawalpur",
-    "Sukkur",
-    "Mardan",
-    "Mingora",
-    "Sheikhupura",
-    "Mandi Bahauddin",
-    "Larkana",
-    "Nawabshah",
+    "Bangalore",
+    "Pune",
+    "Chennai",
+    "Gurgaon",
+    "Noida",
+    "Mumbai",
+    "Kolkata",
+    "Ahmedabad",
+    "Thiruvananthapuram",
+    "Delhi",
+    "Jaipur",
+    "Indore",
+    "Lucknow",
+    "Coimbatore",
+    "Bhubaneswar",
   ];
 
   const nichesArray = [
@@ -96,7 +92,7 @@ const Jobs = () => {
               value={searchKeyword}
               onChange={(e) => setSearchKeyword(e.target.value)}
             />
-            
+
             <button onClick={handleSearch}>Find Job</button>
             <FaSearch />
           </div>

@@ -28,7 +28,6 @@ const PostApplication = () => {
   const [coverLetter, setCoverLetter] = useState("");
   const [resume, setResume] = useState("");
 
-  const navigateTo = useNavigate();
   const dispatch = useDispatch();
 
   const handlePostApplication = (e) => {
